@@ -1,0 +1,42 @@
+.HomePage {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    padding: 5% 20%;
+}
+
+.HomePage .order {
+	width: 500px;
+    border: #e5a87a 1px solid;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+.HomePage .order th, .HomePage .order td {
+    padding: 5px 10px;
+    border: #e5a87a 1px solid;
+}
+
+.HomePage .order th:first-child,
+.HomePage .order td:first-child {
+	width: 100px;
+}
+
+.HomePage .order th:nth-child(2),
+.HomePage .order td:nth-child(2) {
+	width: 200px;
+    text-align: left;
+}
+
+.HomePage .order th:nth-child(3),
+.HomePage .order td:nth-child(3) {
+	width: 50px;
+	text-align: center;
+}
+
+.HomePage .order th:nth-child(4),
+.HomePage .order td:nth-child(4) {
+	text-align: center;
+}

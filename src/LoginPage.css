@@ -1,0 +1,26 @@
+.LoginPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.LoginPage form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.LoginPage input {
+  border: 1px #b4b4b4 solid;
+  padding: 10px;
+}
+
+.LoginPage button {
+  padding: 10px;
+}
+
+.LoginPage .error {
+  border-color: red;
+}
