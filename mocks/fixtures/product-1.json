@@ -1,0 +1,9 @@
+{
+	"id": "1",
+	"name": "Plymouth Rock chicken",
+	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Barred_Plymouth_Rock_Rooster_2.jpg/220px-Barred_Plymouth_Rock_Rooster_2.jpg",
+	"price": 46.7,
+	"description": "<p>The Plymouth Rock is an American breed of domestic chicken. It was first seen in Massachusetts in the nineteenth century, and for much of the early twentieth century was the most popular chicken breed in the United States. It is a dual-purpose breed, raised both for its meat and for its brown eggs. It is resistant to cold, easy to manage, and a good sitter.</p><p>The Plymouth Rock was first shown in Boston in 1849, but was then not seen for another twenty years.[2] In 1869, in Worcester, Massachusetts, one D.A. Upham cross-bred some Black Java hens with a cock with barred plumage and a single comb; he selectively bred for barred plumage and clean (featherless) legs.[6]:68 His birds were shown in Worcester in 1869; the modern Plymouth Rock is thought to derive from them.[2] Other people have been associated with the development of the Plymouth Rock, as have other chicken breeds including the Brahma, the Cochin (both white and buff), the Dominique, and the White-faced Black Spanish.</p>",
+	"link": "https://en.wikipedia.org/wiki/Plymouth_Rock_chicken",
+	"discount": 10
+}
