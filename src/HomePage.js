@@ -14,7 +14,7 @@ class HomePage extends Component {
 		return (
 			user && (
 				<div className="HomePage">
-					<h1>Welcome back {user.firstname}</h1>
+					<h1>Welcome back {user.username}</h1>
 					{orders && (
 						<Fragment>
 							<h2>Previous orders:</h2>

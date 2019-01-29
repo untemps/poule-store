@@ -21,9 +21,7 @@ describe('Login process', () => {
 	})
 
 	it('Should login', () => {
-		cy.get('#username').type('cot@poulestore.com')
-		cy.get('#password').type('cotcotcodot')
-		cy.get('[data-testid=submit-button]').click()
+		cy.login('cot@poulestore.com', 'cotcotcodot')
 		//cy.url().should('eq', Cypress.config().baseUrl + '/')
 		cy.url().then(value => expect(value).to.equal(Cypress.config().baseUrl + '/'))
 	})
@@ -44,18 +42,16 @@ describe('Login process', () => {
 		cy.get('@passwordEl').should('have.class', 'error')
 	})
 
-	describe.only('Request', () => {
+	describe('Request', () => {
 		beforeEach(() => {
 			cy.server()
 			cy.route('POST', '/login', 'fixture:user.json').as('fetchUser')
 
-			cy.get('#username').type('cot@poulestore.com')
-			cy.get('#password').type('cotcotcodot')
-			cy.get('[data-testid=submit-button]').click()
+			cy.login('cot@poulestore.com', 'cotcotcodot')
 		})
 
 		it('Should post credentials', () => {
-			cy.wait('@fetchUser').its('response.body.token').should('eq', '789')
+			cy.wait('@fetchUser').its('response.body.id').should('eq', 2)
 		})
 	})
 })

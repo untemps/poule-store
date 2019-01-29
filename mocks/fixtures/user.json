@@ -1,5 +1,6 @@
 {
-  "token": "123",
-  "firstname": "Vincent",
-  "lastname": "Le Badezet"
+  "id": 1,
+  "name": "Maria Cot",
+  "username": "cotmaria",
+  "email": "cot@poulestore.com"
 }
