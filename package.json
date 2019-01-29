@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"devDependencies": {
+		"cypress": "^3.1.4",
 		"simulado": "^3.4.0"
 	},
 	"dependencies": {
@@ -18,7 +19,8 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"simulado:start": "./node_modules/.bin/simulado",
-		"simulado:prime": "babel-node mocks/simulado.js"
+		"simulado:prime": "babel-node mocks/simulado.js",
+		"cypress:open": "cypress open"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
