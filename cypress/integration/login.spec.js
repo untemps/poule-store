@@ -42,7 +42,7 @@ describe('Login process', () => {
 		cy.get('@passwordEl').should('have.class', 'error')
 	})
 
-	describe.only('Request', () => {
+	describe('Request', () => {
 		beforeEach(() => {
 			cy.server()
 			cy.route('POST', '/login', 'fixture:user.json').as('fetchUser')
@@ -51,9 +51,7 @@ describe('Login process', () => {
 		})
 
 		it('Should post credentials', () => {
-			cy.wait('@fetchUser')
-				.its('response.body.token')
-				.should('eq', '789')
+			cy.wait('@fetchUser').its('response.body.id').should('eq', 2)
 		})
 	})
 })

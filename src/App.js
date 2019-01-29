@@ -12,8 +12,9 @@ const history = createBrowserHistory()
 
 class App extends Component {
 	state = {
-		user: null,
+		user: localStorage.getItem('user'),
 		orders: null,
+		product: null,
 	}
 
 	constructor(props) {
@@ -37,6 +38,9 @@ class App extends Component {
 		this.setState(() => ({
 			user: data,
 		}))
+
+		localStorage.setItem('user', JSON.stringify(data))
+
 		history.push('/')
 	}
 
