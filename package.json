@@ -1,7 +1,10 @@
 {
-	"name": "poule_store",
-	"version": "0.1.0",
+	"name": "poule-store",
+	"version": "1.0.0",
+	"description": "Poule Store",
 	"private": true,
+	"author": "untemps",
+	"license": "MIT",
 	"devDependencies": {
 		"cypress": "^3.1.4",
 		"simulado": "^3.4.0"
